@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./public/output.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body class="font-Epilogue">
+    <!--nav container-->
+    <nav>
+      <!--flex container-->
+      <div
+        class="container mx-auto lg:mt-10 flex items-center justify-between space-x-7 p-6 lg:p-0"
+      >
+        <!--logo-->
+        <div class="flex items-center space-x-10">
+          <img src="./images/logo.svg" class="xl:mr-10" alt="" />
+
+          <!--menu list-->
+          <div class="flex space-x-10 items-center hidden lg:inline-flex">
+            <div class="dropdown relative">
+              <div class="inline-flex items-center space-x-2">
+                <p>Features</p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  class="arrowdown w-4 cursor-pointer"
+                  alt=""
+                />
+                <img
+                  src="./images/icon-arrow-up.svg"
+                  class="arrowup hidden w-4 cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div
+                class="dropdowncontent flex flex-col space-y-3 mt-5 rounded-lg bg-AlmostWhite p-8 -ml-16 shadow-2xl transition-all ease-in-out duration-500 hidden hover:block absolute z-30"
+              >
+                <div class="inline-flex items-center space-x-2 cursor-pointer">
+                  <img src="./images/icon-todo.svg" alt="" />
+                  <p>Todo List</p>
+                </div>
+
+                <div class="inline-flex items-center space-x-2 cursor-pointer">
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  <p>Calender</p>
+                </div>
+
+                <div class="inline-flex items-center space-x-2 cursor-pointer">
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  <p>Reminders</p>
+                </div>
+
+                <div class="inline-flex items-center space-x-2 cursor-pointer">
+                  <img src="./images/icon-planning.svg" alt="" />
+                  <p>Planning</p>
+                </div>
+              </div>
+            </div>
+
+            <!--menu list2-->
+            <div class="dropdown relative">
+              <div class="inline-flex items-center space-x-2">
+                <p>Company</p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  class="art w-4 cursor-pointer"
+                  alt=""
+                />
+                <img
+                  src="./images/icon-arrow-up.svg"
+                  class="ard hidden w-4 cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div
+                class="ddct flex flex-col space-y-3 mt-5 rounded-lg bg-AlmostWhite py-4 px-14 -ml-5 shadow-2xl hidden hover:block absolute z-30 transition-all ease-in-out duration-500"
+              >
+                <p class="cursor-pointer">History</p>
+                <p class="cursor-pointer">Team</p>
+                <p class="cursor-pointer">Blog</p>
+              </div>
+            </div>
+
+            <div>
+              <a href="/">Careers</a>
+            </div>
+
+            <div>
+              <a href="/">About</a>
+            </div>
+          </div>
+        </div>
+
+        <!--right part-->
+        <div class="space-x-10 hidden lg:block">
+          <a href="/">Login</a>
+          <a href="/" class="border-2 py-4 px-7 rounded-xl border-black"
+            >Register</a
+          >
+        </div>
+
+        <!--menu button-->
+        <button class="lg:hidden">
+          <img
+            src="./images/icon-menu.svg"
+            alt=""
+            class="menu-open -mt-2 relative z-30"
+          />
+          <img
+            src="./images/icon-close-menu.svg"
+            class="menu-close hidden -mt-2 z-30 relative"
+            alt=""
+          />
+        </button>
+      </div>
+
+      <!--mobile menu-->
+
+      <div
+        class="menu ml-32 md:ml-48 absolute flex flex-col bg-AlmostWhite shadow-2xl h-full w-full space-y-5 -mt-12 py-20 px-20 text-lg hidden transition ease-in-out delay-150 duration-300"
+      >
+        <div class="dropdown relative">
+          <div class="inline-flex items-center space-x-2">
+            <p>Features</p>
+            <img
+              src="./images/icon-arrow-down.svg"
+              class="aro w-4 cursor-pointer"
+              alt=""
+            />
+            <img
+              src="./images/icon-arrow-up.svg"
+              class="ars hidden w-4 cursor-pointer"
+              alt=""
+            />
+          </div>
+          <div
+            class="drew flex flex-col space-y-3 mt-5 rounded-lg bg-AlmostWhite p-8 -ml-16 shadow-2xl transition-all ease-in-out duration-500 hidden hover:block absolute z-50"
+          >
+            <div class="inline-flex items-center space-x-2 cursor-pointer">
+              <img src="./images/icon-todo.svg" alt="" />
+              <p>Todo List</p>
+            </div>
+
+            <div class="inline-flex items-center space-x-2 cursor-pointer">
+              <img src="./images/icon-calendar.svg" alt="" />
+              <p>Calender</p>
+            </div>
+
+            <div class="inline-flex items-center space-x-2 cursor-pointer">
+              <img src="./images/icon-reminders.svg" alt="" />
+              <p>Reminders</p>
+            </div>
+
+            <div class="inline-flex items-center space-x-2 cursor-pointer">
+              <img src="./images/icon-planning.svg" alt="" />
+              <p>Planning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown relative">
+          <div class="inline-flex items-center space-x-2">
+            <p>Company</p>
+            <img
+              src="./images/icon-arrow-down.svg"
+              class="arte w-4 cursor-pointer"
+              alt=""
+            />
+            <img
+              src="./images/icon-arrow-up.svg"
+              class="arde hidden w-4 cursor-pointer"
+              alt=""
+            />
+          </div>
+          <div
+            class="ddcte flex flex-col space-y-3 mt-5 rounded-lg bg-AlmostWhite py-4 px-14 -ml-5 shadow-2xl hidden hover:block absolute z-30 transition-all ease-in-out duration-500"
+          >
+            <p class="cursor-pointer">History</p>
+            <p class="cursor-pointer">Team</p>
+            <p class="cursor-pointer">Blog</p>
+          </div>
+        </div>
+        <div>
+          <a href="/">Careers</a>
+        </div>
+
+        <div>
+          <a href="/">About</a>
+        </div>
+        <div class="mt-10 space-y-5">
+          <p>Login</p>
+          <p class="border-2 py-4 px-7 rounded-xl border-black w-fit">
+            Register
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <!--section-->
+    <section class="lg:mt-20">
+      <!--flex container-->
+      <div
+        class="container mx-auto flex flex-col-reverse lg:flex-row items-center md:px-28 xl:px-40 gap-5 lg:gap-20"
+      >
+        <!--left-->
+        <div
+          class="mt-10 lg:mt-0 flex flex-col justify-center items-center lg:items-start px-2 text-center lg:text-left gap-5 pb-10 md:pb-0 xl:space-y-5"
+        >
+          <h1 class="text-4xl lg:text-5xl xl:text-7xl font-extrabold">
+            Make remote work
+          </h1>
+          <p class="px-2 lg:px-0 text-lg xl:text-3xl -z-10 opacity-50">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button
+            class="border-2 border-black px-8 py-3 text-AlmostWhite bg-black rounded-xl"
+          >
+            <a href="/">Learn more</a>
+          </button>
+
+          <div class="flex space-x-5 mt-5 lg:space-x-10">
+            <img
+              src="./images/client-databiz.svg"
+              alt=""
+              class="w-14 xl:w-36"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt=""
+              class="w-14 xl:w-36"
+            />
+            <img src="./images/client-meet.svg" alt="" class="w-14 xl:w-36" />
+            <img src="./images/client-maker.svg" alt="" class="w-14 xl:w-36" />
+          </div>
+        </div>
+
+        <!--right-->
+        <div>
+          <img
+            src="./images/image-hero-desktop.png"
+            class="hidden md:block w-full"
+            alt=""
+          />
+          <img src="./images/image-hero-mobile.png" class="md:hidden" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
